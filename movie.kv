@@ -1,0 +1,53 @@
+#:kivy 2.0.0
+
+<BoxLayout>:
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10
+
+    Label:
+        id: movie_list_label
+        text: "Movie List"
+        size_hint_y: None
+        height: self.texture_size[1]
+
+    ScrollView:
+        BoxLayout:
+            id: movie_list
+            orientation: 'vertical'
+            spacing: 5
+
+    BoxLayout:
+        size_hint_y: None
+        height: '48dp'
+
+        TextInput:
+            id: title_input
+            hint_text: "Title"
+            size_hint_x: 0.4
+
+        TextInput:
+            id: genre_input
+            hint_text: "Genre"
+            size_hint_x: 0.4
+
+        TextInput:
+            id: duration_input
+            hint_text: "Duration"
+            size_hint_x: 0.2
+
+        Button:
+            text: "Add Movie"
+            on_release: app.add_movie()
+
+    Button:
+        text: "Allocate Watch Time"
+        size_hint_y: None
+        height: '48dp'
+        on_release: app.show_watch_time_dropdown()
+
+<Slider>:
+    min: 0
+    max: 100
+    value_track: True
+    value_track_color: 1, 0, 0, 1
