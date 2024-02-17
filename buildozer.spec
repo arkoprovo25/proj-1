@@ -36,7 +36,7 @@ android.permissions = INTERNET,ACCESS_NETWORK_STATE
 
 # (list) Python requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = kivy
+requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow
 
 # (str) iOS framework to include (a comma separated list)
 # ios.frameworks = 
@@ -90,6 +90,10 @@ source.include_patterns = assets/*,images/*,fonts/*
 # (str) Presplash background color (for new android toolchain)
 # (black/white/gray/lightgray)
 #presplash.color = #FFFFFF
+
+osx.python_version = 3.7.6
+
+osx.kivy_version = 1.9.1
 
 # (str) Presplash background image (for new android toolchain)
 #presplash.filename = %(source.dir)s/data/presplash.png
