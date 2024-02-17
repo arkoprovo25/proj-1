@@ -14,7 +14,7 @@ source.include_exts = py,png,jpg,kv,atlas
 source.include_patterns = assets/*,images/*,fonts/*
 
 # (str) Application versioning (method 1)
-version = 0.1
+version = 1.1.1
 
 # (list) List of service to declare
 services = NAME:NAME:NAME
@@ -36,7 +36,7 @@ android.permissions = INTERNET,ACCESS_NETWORK_STATE
 
 # (list) Python requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow
+requirements = kivy
 
 # (str) iOS framework to include (a comma separated list)
 # ios.frameworks = 
@@ -90,10 +90,6 @@ source.include_patterns = assets/*,images/*,fonts/*
 # (str) Presplash background color (for new android toolchain)
 # (black/white/gray/lightgray)
 #presplash.color = #FFFFFF
-
-osx.python_version = 3.7.6
-
-osx.kivy_version = 1.9.1
 
 # (str) Presplash background image (for new android toolchain)
 #presplash.filename = %(source.dir)s/data/presplash.png
